@@ -1,0 +1,171 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  background-color: #DCE3FF; /*фон нижній */
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 50px 0;
+  background-color: #E7EBFF; /*фон верхній */
+}
+
+h1, h2 {
+  color: #556AB5; /*колір тексту заголовка */
+  text-align: center;
+}
+
+nav {
+  background-color: #556AB5; /* верхня полоска  */
+  border-color: #556AB5;
+  min-height: 64px;
+}
+
+nav li {
+  float: left;
+  width: 100px;
+}
+
+nav a {
+  display: block;
+  color: #CCD1FF;
+  line-height: 4em;
+  font-weight: bold;
+  text-align: center;
+}
+
+nav li a:hover {
+  color: #1C5D99;
+  background-color: #ABABAB;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.3em;
+  margin-top: 0.1em;
+  margin-bottom: 0;
+  color: #556AB5; /* текст в загальному полі  */
+}
+
+footer {
+  background-color: #556AB5;  /* нижня полоска  */
+  color: #556AB5;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+/*розпочинаємо блок вирівнювання фото і текст в ІНФО */
+.Img {
+  width: 200px;
+  margin: 10px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.block {
+  overflow: hidden; /* очищує float, схоже на .clearfix */
+  margin: 20px auto;
+  max-width: 1000px;
+  padding: 10px;
+}
+
+.block p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.5;
+} /*блок вирівнювання в ІНФО завершено*/
+
+/*блок розтягнення і форматування зображення в ГАЛЕРЕЇ*/
+.inline-img {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.inline-img img {
+  flex: 1 0 20%; /* 5 картинок у ряд */
+  max-width: 20%;
+  height: auto;
+  border-radius: 15px;
+  transform: scale(0.95);
+  transition: 0.3s;
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+}
+
+.inline-img img:hover {
+  transform: scale(1);
+}
+/*завершення блок розтягнення і форматування зображення в ГАЛЕРЕЇ*/
+
+
+.square {
+  width: 90px;
+  height: 90px;
+  margin: 30px auto;
+  background-color: #123456;
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    background-color: yellow;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.multimedia {
+overflow: auto;
+}
+.multimedia-video {
+display: inline-block;
+float: left;
+padding-left: 5px;
+padding-right: 5px;
+width: 33.33%; 
+box-sizing: border-box;
+}
+
+.multimedia-video video {
+  width: 80%;       /* Щоб відео заповнювало блок */
+  height: 500px;     /* АБО інша бажана висота */
+  object-fit: cover; /* Адаптує відео до заданої області без спотворення */
+  object-position: bottom;   /* вирівнювання по нижньому краю */
+}
+
+/*форматування реєстрації користувача*/
+
+form {
+padding: 15px 0;
+float: right;
+}
