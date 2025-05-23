@@ -158,7 +158,7 @@ box-sizing: border-box;
 
 .multimedia-video video {
   width: 80%;       /* Щоб відео заповнювало блок */
-  height: 500px;     /* АБО інша бажана висота */
+  height: 750px;     /* АБО інша бажана висота */
   object-fit: cover; /* Адаптує відео до заданої області без спотворення */
   object-position: bottom;   /* вирівнювання по нижньому краю */
 }
